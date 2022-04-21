@@ -2,6 +2,7 @@ import React ,{useState,useEffect} from 'react'
 import axios from 'axios';
 import Loader from '../components/Loader';
 import Error from '../components/Error';
+import Link from 'react-router-dom';
 
 function Registerscreen() {
 
@@ -63,7 +64,11 @@ function Registerscreen() {
                 
             <div  style = {{margin:'20px'}}>
                  <h1>Not Registered Yet?</h1>
+
+                 <Link to = '/regiter'>
                  <button className="btn btn-primary mt-3 " style = {{backgroundColor: "black"}}> Register</button>
+                 </Link>
+                 
                  </div>
           
             </div>
